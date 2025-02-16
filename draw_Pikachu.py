@@ -5,7 +5,7 @@ import time
 # 基础设置
 t.screensize(800, 600)
 t.pensize(2)  # 设置画笔的大小
-t.speed(10)  # 设置画笔速度为10
+t.speed(15)  # 设置画笔速度为15
 # 画左偏曲线函数
 def radian_left(ang, dis, step, n):
     for i in range(n):
@@ -15,7 +15,7 @@ def radian_left(ang, dis, step, n):
 def radian_right(ang, dis, step, n):
     for i in range(n):
         dis += step
-        t.rt(ang)  # 向左转ang度
+        t.rt(ang)
         t.fd(dis)  # 向前走dis的步长
 # 画耳朵
 def InitEars():
@@ -29,19 +29,19 @@ def InitEars():
     radian_left(1.2, 0.4, 0.1, 40)
     t.setheading(270)  # 画笔角度
     radian_left(1.2, 0.4, 0.1, 40)
-    t.setheading(44)  # 画笔角度
+    t.setheading(44)
     t.forward(32)
     t.end_fill()
     # 右耳朵曲线
     t.pu()  # 提笔
     t.goto(50, 100)  # 笔头初始位置
     t.pd()  # 下笔
-    t.setheading(70)  # 画笔角度
+    t.setheading(70)
     t.begin_fill()
     radian_right(1.2, 0.4, 0.1, 40)
-    t.setheading(270)  # 画笔角度
+    t.setheading(270)
     radian_right(1.2, 0.4, 0.1, 40)
-    t.setheading(136)  # 画笔角度
+    t.setheading(136)
     t.forward(32)
     t.end_fill()
     # 耳朵黑
@@ -50,11 +50,11 @@ def InitEars():
     t.pu()  # 提笔
     t.goto(88, 141)  # 笔头初始位置
     t.pd()  # 下笔
-    t.setheading(35)  # 画笔角度
+    t.setheading(35)
     radian_right(1.2, 1.6, 0.1, 16)
-    t.setheading(270)  # 画笔角度
+    t.setheading(270)
     radian_right(1.2, 0.4, 0.1, 25)
-    t.setheading(132)  # 画笔角度
+    t.setheading(132)
     t.forward(31)
     t.end_fill()
     t.begin_fill()
@@ -62,11 +62,11 @@ def InitEars():
     t.pu()  # 提笔
     t.goto(-88, 141)  # 笔头初始位置
     t.pd()  # 下笔
-    t.setheading(145)  # 画笔角度
+    t.setheading(145)
     radian_left(1.2, 1.6, 0.1, 16)
-    t.setheading(270)  # 画笔角度
+    t.setheading(270)
     radian_left(1.2, 0.4, 0.1, 25)
-    t.setheading(48)  # 画笔角度
+    t.setheading(48)
     t.forward(31)
     t.end_fill()
 # 画尾巴
@@ -77,29 +77,29 @@ def InitTail():
     t.pu()  # 提笔
     t.goto(64, -140)  # 笔头初始位置
     t.pd()  # 下笔
-    t.setheading(10)  # 画笔角度
+    t.setheading(10)
     t.forward(20)
-    t.setheading(90)  # 画笔角度
+    t.setheading(90)
     t.forward(20)
-    t.setheading(10)  # 画笔角度
+    t.setheading(10)
     t.forward(10)
-    t.setheading(80)  # 画笔角度
+    t.setheading(80)
     t.forward(100)
-    t.setheading(35)  # 画笔角度
+    t.setheading(35)
     t.forward(80)
-    t.setheading(260)  # 画笔角度
+    t.setheading(260)
     t.forward(100)
-    t.setheading(205)  # 画笔角度
+    t.setheading(205)
     t.forward(40)
-    t.setheading(260)  # 画笔角度
+    t.setheading(260)
     t.forward(37)
-    t.setheading(205)  # 画笔角度
+    t.setheading(205)
     t.forward(20)
-    t.setheading(260)  # 画笔角度
+    t.setheading(260)
     t.forward(25)
-    t.setheading(175)  # 画笔角度
+    t.setheading(175)
     t.forward(30)
-    t.setheading(100)  # 画笔角度
+    t.setheading(100)
     t.forward(13)
     t.end_fill()
 # 画脚
